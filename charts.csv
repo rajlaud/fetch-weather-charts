@@ -1,13 +1,13 @@
-filename,type,description,available,rotate
-PYAA11,surface,Atlantic surface analysis (east),"3, 10, 15, 21",270
-PYAA12,surface,Atlantic surface analysis (west),"3, 10, 15, 21",270
-PPAE10,surface,24-hour Atlantic sfc prog chart (latest),"5, 7, 23",
-QDTM10,surface,48-hour Atlantic sfc prog chart (latest),"7, 19",
-PPAK98,surface,72-hour Atlantic sfc prog chart (latest),20,
-PWAM99,surface,96-hour Atlantic sfc prog chart (latest),17,
-PPAA10,500mb,0-hour Atlantic 500mb chart (latest),"4, 17",
-PPAE11,500mb,24-hour Atlantic 500mb prog chart (latest),"6, 18",
-PPAG11,500mb,36-hour Atlantic 500mb prog chart (latest),"6, 17",
-PPAI10,500mb,48-hour Atlantic 500mb prog chart (latest),"6, 17",
-PHAK50,500mb,72-hour Atlantic 500mb prog chart (latest),18,
-PPAM50,500mb,96-hour Atlantic 500mb prog chart (latest),18,
+filename,type,description,available,rotate,join_group,join_overlap
+PYAA12,surface,Atlantic surface analysis (west),"3, 10, 15, 21",270,surface_analysis,0
+PYAA11,surface,Atlantic surface analysis (east),"3, 10, 15, 21",270,surface_analysis,246
+PPAE10,surface,24-hour Atlantic sfc prog chart (latest),"5, 7, 23",,
+QDTM10,surface,48-hour Atlantic sfc prog chart (latest),"7, 19",,
+PPAK98,surface,72-hour Atlantic sfc prog chart (latest),20,,
+PWAM99,surface,96-hour Atlantic sfc prog chart (latest),17,,
+PPAA10,500mb,0-hour Atlantic 500mb chart (latest),"4, 17",,
+PPAE11,500mb,24-hour Atlantic 500mb prog chart (latest),"6, 18",,
+PPAG11,500mb,36-hour Atlantic 500mb prog chart (latest),"6, 17",,
+PPAI10,500mb,48-hour Atlantic 500mb prog chart (latest),"6, 17",,
+PHAK50,500mb,72-hour Atlantic 500mb prog chart (latest),18,,
+PPAM50,500mb,96-hour Atlantic 500mb prog chart (latest),18,,
