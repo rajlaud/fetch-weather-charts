@@ -7,7 +7,7 @@ from PIL import Image
 
 PREFIX = "https://tgftp.nws.noaa.gov/fax/"
 SUFFIX = ".TIF"
-CHART_LIST = "charts.csv"
+CHART_LIST = os.path.dirname(__file__) + "/charts.csv"
 CHART_DIR = "charts/"
 
 with open(CHART_LIST, "r") as csvfile:
