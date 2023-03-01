@@ -1,7 +1,7 @@
 filename,type,description,available,rotate,join_group,join_overlap
 PWEE11,surface,24-hour tropical wind and wave forecast,"8, 20",,,
 PWEI11,surface,48-hour tropical wind and wave forecast,"8, 20",,,
-PJEK11,,surface,72-hour tropical wind and wave forecast,"8, 20",,,
+PJEK11,surface,72-hour tropical wind and wave forecast,"8, 20",,,
 PYAA12,surface,Atlantic surface analysis (west),"3, 10, 15, 21",270,surface_analysis,0
 PYAA11,surface,Atlantic surface analysis (east),"3, 10, 15, 21",270,surface_analysis,246
 PPAE10,surface,24-hour Atlantic sfc prog chart (latest),"5, 7, 23",,,
