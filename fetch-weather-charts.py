@@ -12,19 +12,13 @@ CHART_DIR = "charts/"
 
 with open(CHART_LIST, "r") as csvfile:
     reader = csv.DictReader(csvfile)
-    count = {}
     join_groups = {}
 
     for row in reader:
-        if row["type"] not in count:
-            count[row["type"]] = 1
-        else:
-            count[row["type"]] += 1
-
         filename = row["filename"] + SUFFIX
         url = PREFIX + filename
         destination = CHART_DIR + row["type"] + "/"
-        destination_file = f"{destination}{count[row['type']]} - {filename}"
+        destination_file = f"{destination}{row['description']}.TIF"
         etag_file = destination + ".etag_" + filename
 
         os.makedirs(destination, exist_ok=True)
