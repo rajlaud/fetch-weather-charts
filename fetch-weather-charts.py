@@ -38,7 +38,7 @@ with open(CHART_LIST, "r") as csvfile:
                     download.write(file_request.content)
                 with open(etag_file, "w") as efile:
                     efile.write(r.headers["etag"])
-                if row["rotate"].isnumeric() and float(row["rotate"]) > 0.0:
+                if row["rotate"].isnumeric() and float(row["rotate"]) != 0.0:
                     image = Image.open(destination_file)
                     image = image.rotate(float(row["rotate"]), expand=True)
                     image.save(destination_file)
