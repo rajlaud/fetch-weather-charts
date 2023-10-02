@@ -6,7 +6,7 @@ import requests
 from PIL import Image
 
 PREFIX = "https://tgftp.nws.noaa.gov/fax/"
-SUFFIX = ".TIF"
+SUFFIX = ".PNG"
 CHART_LIST = os.path.dirname(__file__) + "/charts.csv"
 CHART_DIR = "charts/"
 
@@ -18,7 +18,7 @@ with open(CHART_LIST, "r") as csvfile:
         filename = row["filename"] + SUFFIX
         url = PREFIX + filename
         destination = CHART_DIR + row["type"] + "/"
-        destination_file = f"{destination}{row['description']}.TIF"
+        destination_file = f"{destination}{row['description']}" + SUFFIX
         etag_file = destination + ".etag_" + filename
 
         os.makedirs(destination, exist_ok=True)
@@ -78,4 +78,4 @@ with open(CHART_LIST, "r") as csvfile:
             )
             x_offset += image.size[0]
 
-        new_image.save(f"{destination}/{join_group}.TIF")
+        new_image.save(f"{destination}/{join_group}" + SUFFIX)
