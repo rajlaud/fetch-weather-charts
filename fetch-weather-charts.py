@@ -6,7 +6,7 @@ import requests
 from PIL import Image
 
 PREFIX = "https://tgftp.nws.noaa.gov/fax/"
-SUFFIX = ".PNG"
+SUFFIX = ".gif"
 CHART_LIST = os.path.dirname(__file__) + "/charts.csv"
 CHART_DIR = "charts/"
 
